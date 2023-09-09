@@ -1,3 +1,3 @@
 # ono-tebe-nado
 Проект "Оно тебе надо"
-https://github.com/yandex-praktikum/ono-tebe-nado.git
+https://github.com/sharshikov/ono-tebe-nado.git
