@@ -5,30 +5,32 @@
     background-color: white;
     margin: auto;
     background-position: center;
-    display: flex;
+    display: grid;
     margin-top: 92px;
     font-size: 18px;
+    grid-template-columns: repeat(3, 1fr);
 }
 .header__logo-image{
     width: 148px;
     height: 105px;
-    display: block;
-    margin: auto;
+    align-self: center;
+    justify-self: center;
 }
 .header__links-list{
     align-items:center;
     display: flex;
     list-style:circle;
     column-gap:30px;
-    
+    justify-self: start;
 }
-.header__links-list-item_no-bullit{
+.list-item_no-bullit{
     list-style-type:none;
 }
 .address{
-    margin: auto;
-    margin-right: 0px;
+    justify-self: end;
     font-style: normal;
+    align-self: center;
+    font-size: 18px;
 }
 .cover{
     width: 1440px;
@@ -134,6 +136,7 @@
 .lots__card-list{
     display: flex;
     list-style:circle;
+    justify-content : space-between
 }
 .card-link{
     display: flex;
@@ -164,4 +167,92 @@
     font-size: 20px;
     padding-top: 20px;
     padding-left: 20px;
+}
+.about{
+    width: 1340px;
+    height: 487px;
+    margin: auto;
+    margin-top: 181px;
+    display: grid;
+    grid-template-columns: 430px auto;
+    margin-bottom: 181px;
+}
+.conteiner{
+    display: grid;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+.about__logo{
+    width: 240px;
+    height: 240px;
+    background-color: black;
+    border-radius: 50%;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_text_conteiner{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+.about__title{
+    padding-top: 100px;
+    font-size: 40px;
+    font-weight:bold;
+    text-transform: uppercase;
+}
+.about__logo-image{
+    background-image: url("../images/logo-white.svg");
+    background-size: cover;
+    width: 148px;
+    height: 114px;
+}
+.about__text{
+    font-size: 20px;
+}
+.about_text_first_p{
+    padding-bottom: 25px;
+}
+.footer{
+    width: 1340px;
+    height: 97px;
+    background-color: aquamarine;
+    margin: auto;
+    display: grid;
+    background-position: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+.footer__menu-list{
+    align-items:center;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+}
+.footer__social-list{
+    display: flex;
+    width: 240px;
+    height: 48px;
+    justify-self: end;
+    justify-content: space-between;
+}
+.footer__social-list-yt{
+    background-image: url("../images/yt.svg");
+    width: 48px;
+    height: 48px;
+}
+.footer__social-list-vk{
+    background-image: url("../images/vk.svg");
+    width: 48px;
+    height: 48px;
+}
+.footer__social-list-pt{
+    background-image: url("../images/pinterest.svg");
+    width: 48px;
+    height: 48px;
+}
+.address_footer{
+    justify-self: start;
 }
