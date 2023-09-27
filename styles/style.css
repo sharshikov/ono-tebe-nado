@@ -69,7 +69,7 @@
 .letter_space_right {
     letter-spacing: 0.3em;
 }
-.no_letter_space_right{
+.no_letter_space_right {
     letter-spacing:0
 }
 .align-left {
@@ -264,7 +264,7 @@
     display: grid;
     background-position: center;
     grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 367px;
+    margin-bottom: 90px;
 }
 .footer__menu-list {
     align-items:center;
