@@ -1,6 +1,6 @@
 /* место для вашего кода */
 .header {
-    width: 1340px;
+    max-width: 1340px;
     height: 109px;
     background-color: white;
     margin: auto;
@@ -37,7 +37,7 @@
     padding-right: 2px;
 }
 .cover {
-    width: 1440px;
+    max-width: 1440px;
     height: 757px;
     margin: auto;
     background-image: url(../images/cover.jpg);
@@ -63,23 +63,33 @@
     line-height:123px;
     letter-spacing:21px;
 }
-.letter_space{
-    padding-left: 30px;
+.letter_space {
+    letter-spacing: 0.6em;
+}
+.letter_space_right {
+    letter-spacing: 0.3em;
+}
+.no_letter_space_right{
+    letter-spacing:0
 }
 .align-left {
     display: block;
-    padding-left: 50px;   
+    padding-left: 50px;
     text-transform: uppercase;
     padding-right: 0px;
+    letter-spacing: 0.3em;
 }
 .align-center {
     display: block;
     text-align: center;
     letter-spacing:29px;
+    text-transform: uppercase;
 }
 .align-right {
     display: block;
     text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 0.6em;
     padding-right: 50px;
 }
 .cover__description {
@@ -118,7 +128,7 @@
     border: 1px solid white;
 }
 .lots {
-    width: 1340px;
+    max-width: 1340px;
     height: 579px;
     margin: auto;
     margin-top: 180px;
@@ -128,32 +138,40 @@
     padding-left: 40px;
     text-transform: uppercase;
 }
+.item_card {
+    flex-grow: 1;
+    flex-basis: 430px;
+}
 .card_type_film {
+    display: flex;
     background-image: url("../images/card-lot-01.jpg");
     background-size: cover;
     margin: auto;
-    width: 430px;
+    width: 100%;
     height: 450px;
 }
 .card_type_book {
+    display: flex;
     background-image: url("../images/card-lot-02.jpg");
     background-size: cover;
     margin: auto;
-    width: 430px;
+    width: 100%;
     height: 450px;
 }
 .card_type_picture {
+    display: flex;
     background-image: url("../images/card-lot-03.jpg");
     background-size: cover;
     margin: auto;
-    width: 430px;
+    width: 100%;
     height: 450px;
 }
 .lots__card-list {
     padding-top: 25px;
     display: flex;
+    flex-wrap: wrap;
     list-style:circle;
-    justify-content : space-between
+    gap: 25px 25px;
 }
 .card-link {
     display: flex;
@@ -191,7 +209,7 @@
     
 }
 .about {
-    width: 1340px;
+    max-width: 1340px;
     height: 487px;
     margin: auto;
     margin-top: 181px;
@@ -240,7 +258,7 @@
     padding-bottom: 25px;
 }
 .footer {
-    width: 1340px;
+    max-width: 1340px;
     height: 97px;
     margin: auto;
     display: grid;
